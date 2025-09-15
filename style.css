@@ -1,0 +1,29 @@
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    background-color: #1a1a1a !important;
+}
+.navbar {
+    background-color: #1a1a1a;
+}
+.navbar .nav-link {
+    color: #d4af37 !important;
+}
+
+.navbar .nav-link:hover {
+    color: #fff !important;
+}
+
+.navbar .nav-link.active,
+.navbar .nav-link.show {
+    color: #fff !important;
+    font-weight: bold;
+}
+
+.about-us {
+    background-color: #1a1a1a;
+    color: #d4af37;
+}
