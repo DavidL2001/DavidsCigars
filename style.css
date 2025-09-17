@@ -71,7 +71,7 @@ body {
 }
 
 .about-us {
-    padding: 10%;
+    padding: 5%;
     background-color: #1a1a1a;
 }
 
@@ -81,13 +81,38 @@ body {
 .about-info {
     padding: 100px;
 }
-#about-cigar-image {
-    height: 50vh;
-    width: fit-content;
+
+.about-images {
+    display: flex;
+    flex-wrap: wrap; /* allows images to move to next line */
+    gap: 20px;
+    max-width: 100%; /* prevents overflowing */
+    height: auto; /* avoid locking the height */
+}
+
+.about-images img {
+    max-width: 30%; /* makes images shrink within container */
+    height: auto;
+    flex: 1 1 300px; /* flexible: min 300px wide, then wrap */
+}
+@media (max-width: 768px) {
+    .about-images {
+        flex-direction: column;
+        align-items: center; /* optional: center them */
+        max-width: 100%;
+    }
+    .about-images img {
+        max-width: 100%; /* makes images shrink within container */
+        height: auto;
+        flex: 1 1 300px; /* flexible: min 300px wide, then wrap */
+    }
 }
 p {
     color: #fff;
 }
-.cigars-list {
+.headers {
+    color: #d4af37;
+}
+ul {
     color: #fff;
 }
