@@ -71,6 +71,23 @@ body {
 }
 
 .about-us {
+    padding: 10%;
     background-color: #1a1a1a;
+}
+
+.about-header {
     color: #d4af37;
+}
+.about-info {
+    padding: 100px;
+}
+#about-cigar-image {
+    height: 50vh;
+    width: fit-content;
+}
+p {
+    color: #fff;
+}
+.cigars-list {
+    color: #fff;
 }
