@@ -16,11 +16,21 @@ body {
 .navbar .nav-link:hover {
     color: #fff !important;
 }
-
+.navbar-toggler-icon {
+    filter: invert(1);
+}
 .navbar .nav-link.active,
 .navbar .nav-link.show {
     color: #fff !important;
     font-weight: bold;
+}
+.shipping-header {
+    background-color: rgb(125, 0, 0);
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
 }
 .home {
     display: flex;
@@ -72,11 +82,19 @@ body {
 
 .about-us {
     padding: 5%;
-    background-color: #1a1a1a;
+    background: #1c1c1c;
+    background: linear-gradient(
+        129deg,
+        rgba(28, 28, 28, 1) 0%,
+        rgba(43, 43, 43, 1) 50%,
+        rgba(54, 54, 54, 1) 100%
+    );
 }
 
 .about-header {
     color: #d4af37;
+    font-family: 'Garamond', serif;
+    font-weight: bold;
 }
 .about-info {
     padding: 100px;
@@ -107,12 +125,107 @@ body {
         flex: 1 1 300px; /* flexible: min 300px wide, then wrap */
     }
 }
-p {
+.about-us p {
     color: #fff;
 }
 .headers {
     color: #d4af37;
+    font-family: 'Garamond', serif;
+    font-weight: bold;
 }
 ul {
     color: #fff;
+}
+
+.cigar-page {
+    background: #1c1c1c;
+    background: linear-gradient(
+        129deg,
+        rgba(28, 28, 28, 1) 0%,
+        rgba(43, 43, 43, 1) 50%,
+        rgba(54, 54, 54, 1) 100%
+    );
+}
+
+#cigar-quote {
+    text-align: center;
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #fff;
+    padding: 5%;
+}
+
+#cigars-header {
+    text-align: center;
+    font-family: 'Garamond', serif;
+    font-weight: bold;
+    color: #d4af37;
+}
+.cigar-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3%;
+    padding: 5%;
+}
+@media (max-width: 768px) {
+    .cigar-cards {
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        gap: 1rem;
+    }
+}
+
+.card-text {
+    color: #1a1a1a;
+}
+.contact-page {
+    background-color: #fff;
+    background-size: cover;
+    color: #1a1a1a;
+}
+#contact-header {
+    padding-top: 2%;
+    padding-left: 2%;
+    font-family: 'Garamond', serif;
+    font-weight: bold;
+}
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 7%;
+}
+#custom-service-info {
+    white-space: nowrap;
+    margin: 0;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #1a1a1a;
+    font-weight: bold;
+    gap: 10%;
+    padding: 5%;
+}
+footer p {
+    white-space: nowrap;
+    margin: 0;
+    color: #fff;
+}
+#bottom-footer-text {
+    padding-top: 1rem;
+}
+#cigar-quote2 {
+    text-align: center;
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #1a1a1a;
+    padding: 5%;
 }

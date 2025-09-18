@@ -17,57 +17,131 @@
         <title>DavidsCigars</title>
     </head>
     <body>
-        <section class="navbaren">
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
+        <header>
+            <section class="navbaren">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <img
+                                src="assets/cigarlogo.png"
+                                alt="Bootstrap"
+                                width="60"
+                                height="55"
+                            />
+                        </a>
+                        <button
+                            class="navbar-toggler"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav"
+                            aria-controls="navbarNav"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation"
+                        >
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link"
+                                        aria-current="page"
+                                        href="index.html"
+                                        >Home</a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html"
+                                        >About us</a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link active"
+                                        href="cigars.html"
+                                        >Cigars</a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html"
+                                        >Contact us</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </section>
+        </header>
+        <main>
+            <section class="cigar-page">
+                <h1 id="cigar-quote">
+                    "My rule of life prescribed as an absolutely sacred rite
+                    smoking cigars." —Winston Churchill, Triumph and Tragedy
+                </h1>
+                <h1 id="cigars-header">Explore our cigars!</h1>
+                <div class="cigar-cards">
+                    <div class="card" style="width: 18rem">
                         <img
-                            src="assets/cigarlogo.png"
-                            alt="Bootstrap"
-                            width="60"
-                            height="55"
+                            src="/assets/lightcigar.png"
+                            class="card-img-top"
+                            alt="Image of a light brown cigar"
                         />
-                    </a>
-                    <button
-                        class="navbar-toggler"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarNav"
-                        aria-controls="navbarNav"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                    >
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a
-                                    class="nav-link"
-                                    aria-current="page"
-                                    href="#"
-                                    >Home</a
-                                >
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="about.html"
-                                    >About us</a
-                                >
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="cigars.html"
-                                    >Cigars</a
-                                >
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html"
-                                    >Contact us</a
-                                >
-                            </li>
-                        </ul>
+                        <div class="card-body">
+                            <h5 class="card-title">The Golden Reserve</h5>
+                            <h5 class="card-title">$9</h5>
+                            <p class="card-text">
+                                Delivers a smooth and mellow character, perfect
+                                for those seeking an approachable yet refined
+                                taste.
+                            </p>
+                            <a href="#" class="btn btn-primary">Buy</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem">
+                        <img
+                            src="/assets/darkcigar.png"
+                            class="card-img-top"
+                            alt="Image of a brown cigar"
+                        />
+                        <div class="card-body">
+                            <h5 class="card-title">The Signature Select</h5>
+                            <h5 class="card-title">$10</h5>
+                            <p class="card-text">
+                                Embodies richness and balance, making it the
+                                timeless choice for both new and seasoned
+                                enthusiasts.
+                            </p>
+                            <a href="#" class="btn btn-primary">Buy</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem">
+                        <img
+                            src="/assets/blackcigar.png"
+                            class="card-img-top"
+                            alt="Image of a black cigar"
+                        />
+                        <div class="card-body">
+                            <h5 class="card-title">The Dark Heritage</h5>
+                            <h5 class="card-title">$13</h5>
+                            <p class="card-text">
+                                Brings boldness and depth, offering a robust
+                                experience for those who crave intensity.
+                            </p>
+                            <a href="#" class="btn btn-primary">Buy</a>
+                        </div>
                     </div>
                 </div>
-            </nav>
-        </section>
+            </section>
+        </main>
+        <footer>
+            <p>Phone number: 123 456 789</p>
+            <p>Email: davidscigars@mail.com</p>
+            <p>Adress: StockholmWay 123</p>
+            <p>Social media: @Davidscigarsofficial</p>
+            <p id="bottom-footer-text">© 2025 DavidsCigars AB</p>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
     </body>
 </html>
