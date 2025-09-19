@@ -6,6 +6,7 @@ body {
     min-height: 100%;
     background-color: #1a1a1a !important;
 }
+/*navbar styling */
 .navbar {
     background-color: #1a1a1a;
 }
@@ -24,6 +25,7 @@ body {
     color: #fff !important;
     font-weight: bold;
 }
+/*home page styling */
 .shipping-header {
     background-color: rgb(125, 0, 0);
     color: #fff;
@@ -79,7 +81,7 @@ body {
     font-family: 'Garamond', serif;
     font-weight: bold;
 }
-
+/*About us page styling */
 .about-us {
     padding: 5%;
     background: #1c1c1c;
@@ -102,27 +104,27 @@ body {
 
 .about-images {
     display: flex;
-    flex-wrap: wrap; /* allows images to move to next line */
+    flex-wrap: wrap;
     gap: 20px;
-    max-width: 100%; /* prevents overflowing */
-    height: auto; /* avoid locking the height */
+    max-width: 100%;
+    height: auto;
 }
 
 .about-images img {
-    max-width: 30%; /* makes images shrink within container */
+    max-width: 30%;
     height: auto;
-    flex: 1 1 300px; /* flexible: min 300px wide, then wrap */
+    flex: 1 1 300px;
 }
 @media (max-width: 768px) {
     .about-images {
         flex-direction: column;
-        align-items: center; /* optional: center them */
+        align-items: center;
         max-width: 100%;
     }
     .about-images img {
-        max-width: 100%; /* makes images shrink within container */
+        max-width: 100%;
         height: auto;
-        flex: 1 1 300px; /* flexible: min 300px wide, then wrap */
+        flex: 1 1 300px;
     }
 }
 .about-us p {
@@ -136,6 +138,8 @@ body {
 ul {
     color: #fff;
 }
+
+/*cigar page styling */
 
 .cigar-page {
     background: #1c1c1c;
@@ -181,6 +185,8 @@ ul {
 .card-text {
     color: #1a1a1a;
 }
+
+/*contact page styling */
 .contact-page {
     background-color: #fff;
     background-size: cover;
@@ -204,6 +210,17 @@ ul {
     margin: 0;
 }
 
+#cigar-quote2 {
+    text-align: center;
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #1a1a1a;
+    padding: 5%;
+}
+
+/*footer styling */
+
 footer {
     display: flex;
     flex-direction: column;
@@ -220,12 +237,4 @@ footer p {
 }
 #bottom-footer-text {
     padding-top: 1rem;
-}
-#cigar-quote2 {
-    text-align: center;
-    font-family: Georgia, serif;
-    font-style: italic;
-    font-size: 1.2rem;
-    color: #1a1a1a;
-    padding: 5%;
 }
